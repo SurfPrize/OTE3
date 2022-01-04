@@ -26,8 +26,8 @@
                 {
                     "name": "",
                     "id": "41ddf687-b8fe-4f6d-812e-0d9c858eae4b",
-                    "path": "<Touchscreen>/primaryTouch/position",
-                    "interactions": "",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "Phone",
                     "action": "MovementDirection",
