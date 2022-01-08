@@ -6,14 +6,6 @@
             "id": "53c15331-1647-47f7-afcc-5b8124ca2258",
             "actions": [
                 {
-                    "name": "MovementDirection",
-                    "type": "Value",
-                    "id": "558ada63-f580-4a22-bb9f-87383f9ed221",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "TouchPosition",
                     "type": "Value",
                     "id": "5e34420c-f735-4062-a71e-4f32e35461c2",
@@ -28,27 +20,32 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "phoneRot",
+                    "type": "Value",
+                    "id": "877881e6-2e1d-4f07-a73f-722e69969e00",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MovementDirection",
+                    "type": "Value",
+                    "id": "13c6eaa9-61bf-4182-9e80-88880af073e2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "7800b4f8-6d2f-468e-9efe-26e8a1b97d1b",
-                    "path": "<Touchscreen>/primaryTouch/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "New control scheme",
-                    "action": "MovementDirection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "01d0cf35-fea2-41f8-bc5e-9c12ad5f15ea",
                     "path": "<Touchscreen>/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Phone",
                     "action": "TouchPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -59,8 +56,30 @@
                     "path": "<Touchscreen>/press",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Phone",
                     "action": "Enablemovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "69b38d0e-7546-48c8-a90d-c2731471fd70",
+                    "path": "<Sensor>/attitude",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "phoneRot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "97a6f79b-80e1-4a3c-b67b-7550c6e8285d",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovementDirection",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -69,11 +88,16 @@
     ],
     "controlSchemes": [
         {
-            "name": "New control scheme",
-            "bindingGroup": "New control scheme",
+            "name": "Phone",
+            "bindingGroup": "Phone",
             "devices": [
                 {
                     "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Gyroscope>",
                     "isOptional": false,
                     "isOR": false
                 }
