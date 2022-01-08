@@ -46,8 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stickposition: {x: 0, y: 0}
-  moving: 0
-  speed: 0
+  MaxRange: 0.5
   Maxspeed: 0.005
 --- !u!95 &6992742444464378811
 Animator:
