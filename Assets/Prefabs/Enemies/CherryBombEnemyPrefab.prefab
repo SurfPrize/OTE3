@@ -1405,12 +1405,18 @@ Animator:
   m_GameObject: {fileID: 5918797881958341004}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d572985ee02ed7a43b67d524b2207ab8, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4dff7774d625542b310f08022aa3ec, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+    'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+    'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+    'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+    'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -1434,11 +1440,14 @@ MonoBehaviour:
   attackReady: 0
   meleeDmg: 1
   meleeForce: 0
+  audioSourceSfx: {fileID: 0}
   explosionRadius: 3
   explosionForce: 1
   timeToExplode: 5
   dmgExplosion: 2
   explosionFX: {fileID: 0}
+  sfxExplosionWarning: {fileID: 0}
+  sfxExplosion: {fileID: 0}
 --- !u!54 &-9015831558316046448
 Rigidbody:
   m_ObjectHideFlags: 0
