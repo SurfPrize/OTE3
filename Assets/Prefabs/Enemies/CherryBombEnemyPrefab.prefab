@@ -6176,6 +6176,7 @@ GameObject:
   - component: {fileID: 1119205154969327948}
   - component: {fileID: 6837205860972438739}
   - component: {fileID: 2882174897487015580}
+  - component: {fileID: 4343361097993734864}
   m_Layer: 6
   m_Name: CherryBombEnemyPrefab
   m_TagString: Untagged
@@ -6245,9 +6246,10 @@ MonoBehaviour:
   explosionForce: 1
   timeToExplode: 5
   dmgExplosion: 2
-  explosionFX: {fileID: 0}
-  sfxExplosionWarning: {fileID: 0}
-  sfxExplosion: {fileID: 0}
+  explosionFX: {fileID: 4303927001171802053, guid: ba23d9dd58814cf4c8d2757e1af1b74c,
+    type: 3}
+  sfxExplosionWarning: {fileID: 8300000, guid: 7a1bc08498b8d9a41a4d64a3d131a5be, type: 3}
+  sfxExplosion: {fileID: 8300000, guid: ee936e0a540980f4c8765b0a054f5ce3, type: 3}
 --- !u!54 &2882174897487015580
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6264,6 +6266,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4343361097993734864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5918797881958341004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79666cd23f6eaa24b993af337b961272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  destructable: 1
+  sfxStun: {fileID: 8300000, guid: 29ea6121c2eaa9846a3af1ce5373b3c7, type: 3}
+  audioSourceSfx: {fileID: 0}
+  dead: 0
 --- !u!1 &6583593201799564541
 GameObject:
   m_ObjectHideFlags: 0

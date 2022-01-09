@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -1584538878205631119}
   - component: {fileID: 6992742444464378811}
   - component: {fileID: -584418155598327459}
+  - component: {fileID: -7788104853069619597}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -46,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee3f7cfffb53564bb883884813c6318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxRange: 0.32
-  Maxspeed: 0.005
+  MaxRange: 20
+  Maxspeed: 0.5
 --- !u!95 &6992742444464378811
 Animator:
   serializedVersion: 3
@@ -79,12 +80,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964825ec2bfa00a48877e00edd6116f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
-    type: 3}
+  projectile: {fileID: 0}
   projectileDamage: 1
   projectileSpeed: 0.01
-  shootSfx: {fileID: 8300000, guid: 2f8cd8f6833a60245b5cf1adf777e38e, type: 3}
-  timeToResetAtkIndex: 1
+  shootSfx: {fileID: 0}
+  timeToResetAtkIndex: 15
+--- !u!114 &-7788104853069619597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753763664481541466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79666cd23f6eaa24b993af337b961272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  destructable: 0
+  sfxStun: {fileID: 8300000, guid: d979b719553a5e04da7b6cb0804e6460, type: 3}
+  audioSourceSfx: {fileID: 0}
+  dead: 0
 --- !u!1001 &544760947843197698
 PrefabInstance:
   m_ObjectHideFlags: 0
