@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1971563724529074860}
   - component: {fileID: -1584538878205631119}
   - component: {fileID: 6992742444464378811}
+  - component: {fileID: -584418155598327459}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -45,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee3f7cfffb53564bb883884813c6318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stickposition: {x: 0, y: 0}
   MaxRange: 0.5
   Maxspeed: 0.005
 --- !u!95 &6992742444464378811
@@ -67,6 +67,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-584418155598327459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753763664481541466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964825ec2bfa00a48877e00edd6116f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+    type: 3}
+  projectileDamage: 1
+  projectileSpeed: 0.01
+  shootSfx: {fileID: 8300000, guid: 2f8cd8f6833a60245b5cf1adf777e38e, type: 3}
+  timeToResetAtkIndex: 1
 --- !u!1001 &544760947843197698
 PrefabInstance:
   m_ObjectHideFlags: 0
