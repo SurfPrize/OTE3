@@ -109,6 +109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CherryBombEnemyPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5918797881958341004, guid: 0575d9e9d113ab14a84374035b9bb0e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6442430036531626806, guid: 0575d9e9d113ab14a84374035b9bb0e8,
         type: 3}
       propertyPath: m_RootOrder

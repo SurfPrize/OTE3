@@ -94,7 +94,7 @@
                 {
                     "name": "",
                     "id": "9a59e80f-c474-4a5d-876d-0870012ddb33",
-                    "path": "<Touchscreen>/touch1/startPosition",
+                    "path": "<Touchscreen>/touch0/startPosition",
                     "interactions": "",
                     "processors": "",
                     "groups": "Phone",
@@ -105,10 +105,10 @@
                 {
                     "name": "",
                     "id": "bbe72b09-0d7c-4272-a8aa-092e0d307e86",
-                    "path": "<Touchscreen>/touch2/startPosition",
+                    "path": "<Touchscreen>/touch1/startPosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Phone",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
