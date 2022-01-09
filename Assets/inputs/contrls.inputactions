@@ -93,11 +93,22 @@
                 },
                 {
                     "name": "",
-                    "id": "eba16108-5526-4396-83c8-463591e56855",
-                    "path": "<Touchscreen>/position",
+                    "id": "9a59e80f-c474-4a5d-876d-0870012ddb33",
+                    "path": "<Touchscreen>/touch1/startPosition",
                     "interactions": "",
                     "processors": "",
                     "groups": "Phone",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bbe72b09-0d7c-4272-a8aa-092e0d307e86",
+                    "path": "<Touchscreen>/touch2/startPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
