@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6736867497588086207}
   - component: {fileID: 6736867497588086204}
+  - component: {fileID: 7495038765241346881}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6736867497588086205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.534749, y: 1.6822288, z: 2.9324908}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49,7 +50,6 @@ MonoBehaviour:
       type: 3}
     difficulty: 0
     maxProb: 100
-  enemyTag: 
   radius: 5
   difficulty: 0
   multiplier: 0
@@ -57,3 +57,16 @@ MonoBehaviour:
   waveBreak: 15
   waveCount: 5
   infiniteWaves: 0
+--- !u!135 &7495038765241346881
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6736867497588086205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}

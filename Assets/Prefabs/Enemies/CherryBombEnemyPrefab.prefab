@@ -6178,7 +6178,7 @@ GameObject:
   - component: {fileID: -9015831558316046448}
   m_Layer: 0
   m_Name: CherryBombEnemyPrefab
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6235,7 +6235,7 @@ MonoBehaviour:
   speed: 3
   attackRateMax: 3
   attackRateMin: 1
-  distanceFromPlayer: 0
+  distanceFromPlayer: 0.02
   player: {fileID: 0}
   attackReady: 0
   meleeDmg: 1
