@@ -6233,10 +6233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c0fa43efb160c4088947d9665b67ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 0.002
   attackRateMax: 3
   attackRateMin: 1
-  distanceFromPlayer: 0.02
+  distanceFromPlayer: 0.0002
   player: {fileID: 0}
   attackReady: 0
   meleeDmg: 1

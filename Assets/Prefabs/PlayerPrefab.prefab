@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee3f7cfffb53564bb883884813c6318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxRange: 20
-  Maxspeed: 0.5
+  MaxRange: 0.32
+  Maxspeed: 0.005
 --- !u!95 &6992742444464378811
 Animator:
   serializedVersion: 3
@@ -85,6 +85,7 @@ MonoBehaviour:
   projectileSpeed: 0.01
   shootSfx: {fileID: 0}
   timeToResetAtkIndex: 15
+  oncooldown: 0
 --- !u!114 &-7788104853069619597
 MonoBehaviour:
   m_ObjectHideFlags: 0
